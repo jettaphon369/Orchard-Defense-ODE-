@@ -1,0 +1,32 @@
+[
+  {
+    "id": "peach",
+    "name": "Peachy",
+    "emoji": "🍑",
+    "cost": 50,
+    "hp": 150,
+    "damage": 22,
+    "range": 4.2,
+    "cooldown": 0.85,
+    "role": "ranged"
+  },
+  {
+    "id": "sunny",
+    "name": "Sunny",
+    "emoji": "🌻",
+    "cost": 50,
+    "hp": 120,
+    "sunEvery": 5.0,
+    "sunAmount": 25,
+    "role": "support"
+  },
+  {
+    "id": "spud",
+    "name": "Spud",
+    "emoji": "🥔",
+    "cost": 75,
+    "hp": 440,
+    "damage": 0,
+    "role": "tank"
+  }
+]

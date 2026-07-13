@@ -1,0 +1,6 @@
+{
+  "baseCount": 5,
+  "countPerWave": 2,
+  "spawnIntervalMs": 850,
+  "beetleEvery": 4
+}
