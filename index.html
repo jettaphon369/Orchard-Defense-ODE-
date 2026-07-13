@@ -1,0 +1,44 @@
+<!doctype html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><title>Orchard Defense: Sky Kingdom</title><link rel="stylesheet" href="style.css?v=1.5"></head><body>
+<div id="hub" class="hub-screen">
+  <div class="hub-topbar">
+    <div class="profile"><div class="avatar-mini">🧑‍🌾</div><div><b>ผู้พิทักษ์สวน</b><small id="levelText">Lv.1</small></div></div>
+    <div class="currency"><span>🪙 <b id="goldText">0</b></span><span>💎 <b id="gemText">25</b></span><button id="hubSound">🔊</button></div>
+  </div>
+  <div class="hub-title"><b>SKY KINGDOM</b><small>เมืองลอยฟ้าของคุณ</small></div>
+  <div id="hubWorld" class="hub-world" aria-label="เมืองลอยฟ้า">
+    <div class="cloud c1">☁️</div><div class="cloud c2">☁️</div><div class="cloud c3">☁️</div>
+    <div class="waterfall w1"></div><div class="waterfall w2"></div>
+    <button class="building castle" data-place="castle"><span>🏰</span><b>ปราสาท</b><small>เนื้อเรื่องและบท</small></button>
+    <button class="building shop" data-place="shop"><span>🛒</span><b>ร้านค้า</b><small id="shopBadge">สินค้าใหม่</small></button>
+    <button class="building heroes" data-place="heroes"><span>🧙</span><b>ศาลาฮีโร่</b><small>ดูตัวละคร</small></button>
+    <button class="building forge" data-place="forge"><span>⚒️</span><b>โรงตีเหล็ก</b><small>อัปเกรดพลัง</small></button>
+    <button class="building quest" data-place="quest"><span>📜</span><b>กระดานเควส</b><small id="questBadge">รับรางวัลได้</small></button>
+    <button class="building reward" data-place="reward"><span>🎁</span><b>ศูนย์รางวัล</b><small>รางวัลรายวัน</small></button>
+    <button class="building home" data-place="home"><span>🏡</span><b>บ้านผู้เล่น</b><small>สถิติและคอลเลกชัน</small></button>
+    <button class="building adventure" data-place="adventure"><span>🚪</span><b>ประตูผจญภัย</b><small>เข้าสู่ 3 ด่าน</small></button>
+    <div class="plaza">⛲</div><div class="tree t1">🌳</div><div class="tree t2">🌴</div><div class="tree t3">🌲</div><div class="tree t4">🌳</div>
+    <div id="player" class="hub-player"><span>🧑‍🌾</span><i></i></div>
+    <div id="interactHint" class="interact-hint">แตะอาคารเพื่อเดินไปใช้งาน</div>
+  </div>
+  <nav class="hub-nav"><button data-place="adventure">⚔️<small>เล่น</small></button><button data-place="quest">📜<small>เควส</small></button><button data-place="heroes">🧙<small>ฮีโร่</small></button><button data-place="shop">🛒<small>ร้านค้า</small></button><button data-place="home">🏡<small>บ้าน</small></button></nav>
+</div>
+
+<div id="app" class="battle-app">
+  <header>
+    <div class="topRow"><div class="brand">🍑 <b>ORCHARD DEFENSE</b><small>CAMPAIGN</small></div><div class="topActions"><button id="mapBtn" aria-label="แผนที่">🗺️</button><button id="soundBtn" aria-label="เสียง">🔊</button><button id="pauseBtn" aria-label="หยุดเกม">Ⅱ</button></div></div>
+    <div class="stageTitle" id="stageTitle">ด่าน 1 • สวนลอยฟ้า</div>
+    <div class="hud"><button id="energyText">☀️ 150</button><button id="waveText">🌊 1/12</button><button id="killText">💀 0</button><button id="speedBtn">×1</button><button id="skillBtn">⚡</button></div>
+  </header>
+  <main><div id="game"><div id="loading">กำลังเข้าสู่ด่าน…</div><div id="bossHud"><b id="bossName">🐉 BOSS</b><div id="bossTrack" class="bossTrack" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100"></div></div></div></main>
+  <section id="deck"></section><div class="help">แตะการ์ด → แตะช่องเพื่อวาง • แตะพื้นที่ว่างเพื่อยกเลิก • แตะยูนิตเดิมเพื่ออัปเกรด</div>
+</div>
+
+<div id="map" class="overlay"><div class="panel mapPanel"><h2>🗺️ แผนที่เกาะลอยฟ้า</h2><p id="progressText"></p><div class="stageGrid">
+<button class="stageCard" data-stage="1"><span class="stageIcon">🌿</span><b>ด่าน 1</b><small>สวนลอยฟ้า • 8 เวฟ</small><em class="stars">☆☆☆</em></button>
+<button class="stageCard" data-stage="2"><span class="stageIcon">🌲</span><b>ด่าน 2</b><small>ป่าเวทมนตร์ • 10 เวฟ</small><em class="stars">☆☆☆</em></button>
+<button class="stageCard" data-stage="3"><span class="stageIcon">🌋</span><b>ด่าน 3</b><small>ภูเขาไฟลอยฟ้า • 12 เวฟ</small><em class="stars">☆☆☆</em></button>
+</div><button id="closeMap">กลับเมือง</button></div></div>
+
+<div id="buildingModal" class="overlay"><div class="panel feature-panel"><button id="closeFeature" class="close-x">✕</button><div id="featureContent"></div></div></div>
+<script src="hub.js?v=8.3"></script>
+<script src="https://cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.min.js"></script><script src="game.js?v=1.5"></script></body></html>
