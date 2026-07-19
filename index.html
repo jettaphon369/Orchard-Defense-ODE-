@@ -1,0 +1,121 @@
+<!doctype html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><title>Orchard Defense: Sky Kingdom</title><link rel="stylesheet" href="style.css?v=16.0"></head><body>
+
+<div id="mainMenu" class="main-menu-v13 screen-active" aria-label="หน้าแรก Orchard Defense">
+  <div class="v13-sky" aria-hidden="true">
+    <span class="v13-cloud c1">☁️</span><span class="v13-cloud c2">☁️</span><span class="v13-cloud c3">☁️</span>
+    <span class="v13-bird b1">🕊️</span><span class="v13-bird b2">🕊️</span><span class="v13-balloon">🎈</span>
+  </div>
+  <header class="v13-topbar">
+    <button id="mmProfile" class="v13-profile"><span>🧑‍🌾</span><div><b>ผู้พิทักษ์สวน</b><small id="mmLevel">Lv.1</small><i><em id="mmXpBar"></em></i></div></button>
+    <div class="v13-wallet v15-home-tools"><button id="mmSettings" aria-label="ตั้งค่า">⚙️</button></div>
+  </header>
+  <main class="v13-main">
+    <section class="v13-logo"><small>ORCHARD DEFENSE</small><h1>SKY KINGDOM</h1><p>อาณาจักรลอยฟ้าแห่งผู้พิทักษ์ธรรมชาติ</p></section>
+    <section class="v13-castle-scene" aria-label="ปราสาทลอยฟ้า">
+      <div class="v13-sun"></div><div class="v13-island"><span class="v13-castle">🏰</span><span class="v13-tree t1">🌳</span><span class="v13-tree t2">🌲</span><span class="v13-waterfall w1"></span><span class="v13-waterfall w2"></span></div>
+    </section>
+    <button id="mmEnterHub" class="v13-enter"><span>🏰</span><div><b>เข้าสู่เมืองลอยฟ้า</b><small>แตะอาคารเพื่อใช้งานระบบต่าง ๆ</small></div><em>›</em></button>
+  </main>
+</div>
+
+<div id="hub" class="hub-screen lobby-v3" hidden>
+  <div class="hub-topbar">
+    <div class="profile"><div class="avatar-mini">🧑‍🌾</div><div><b>ผู้พิทักษ์สวน</b><small id="levelText">Lv.1</small></div></div>
+    <div class="currency"><button id="hubMainMenu" aria-label="กลับหน้าแรก">🏠</button><span>🪙 <b id="goldText">0</b></span><span>💎 <b id="gemText">25</b></span><button id="hubSound" aria-label="เสียง">🔊</button></div>
+  </div>
+
+
+
+
+  <div id="hubWorld" class="sky-city open-world-city" aria-label="เมืองลอยฟ้า">
+    <div class="sun-glow"></div>
+    <div class="cloud cloud-a">☁️</div><div class="cloud cloud-b">☁️</div><div class="cloud cloud-c">☁️</div>
+    <div class="open-island">
+      <div class="island-rim"></div><div class="island-cliff-v3"></div>
+      <div class="road road-main"></div><div class="road road-cross"></div><div class="road road-lower"></div>
+      <div class="plaza-v3"><div class="fountain-v3">⛲</div><small>ลานกลาง</small><span class="bench bench-l">▰</span><span class="bench bench-r">▰</span><span class="lamp lamp-l">🏮</span><span class="lamp lamp-r">🏮</span><span class="plaza-flower pf1">✿</span><span class="plaza-flower pf2">✿</span></div>
+      <button class="world-tree-v3 world-tree-button" data-place="tree" aria-label="ต้นไม้โลก"><i class="tree-crown">🌳</i><i class="fruit fruit-a">●</i><i class="fruit fruit-b">●</i><i class="fruit fruit-c">●</i><span>ต้นไม้โลก</span></button>
+
+      <button class="world-building castle-v3 castle-restored" data-place="castle" aria-label="ปราสาทหลวง"><span class="legacy-castle-art">🏰</span><b>ปราสาทหลวง</b></button>
+      <button class="world-building shop-v3" data-place="shop" aria-label="ตลาดเมฆทอง"><span class="building-art market-art"><i class="roof"></i><i class="wall"></i><i class="awning"></i><i class="door"></i></span><b>ตลาดเมฆทอง</b></button>
+      <button class="world-building heroes-v3" data-place="heroes" aria-label="ศาลาฮีโร่"><span class="building-art temple-art"><i class="roof"></i><i class="column c1"></i><i class="column c2"></i><i class="column c3"></i><i class="base"></i></span><b>ศาลาฮีโร่</b><i class="magic-glow"></i></button>
+      <button class="world-building forge-v3" data-place="forge" aria-label="โรงตีเหล็ก"><span class="building-art forge-art"><i class="roof"></i><i class="wall"></i><i class="chimney ch1"></i><i class="chimney ch2"></i><i class="fire"></i></span><b>โรงตีเหล็ก</b><i class="smoke-v3">☁</i></button>
+      <button class="world-building quest-v3" data-place="quest" aria-label="กิลด์ภารกิจ"><span class="building-art guild-art"><i class="roof"></i><i class="wall"></i><i class="board"></i><i class="pin p1"></i><i class="pin p2"></i></span><b>กิลด์ภารกิจ</b><i class="notice-v3">!</i></button>
+      <button class="world-building home-v3" data-place="home" aria-label="บ้านผู้เล่น"><span class="building-art home-art"><i class="roof"></i><i class="wall"></i><i class="door"></i><i class="window"></i></span><b>บ้านผู้เล่น</b></button>
+      <button class="world-building reward-v3" data-place="reward" aria-label="หอรางวัล"><span class="building-art reward-art"><i class="chest"></i><i class="lid"></i><i class="band v"></i><i class="band h"></i></span><b>หอรางวัล</b><i class="spark-v3">✦</i></button>
+      <button class="portal-v3" data-place="adventure" aria-label="ประตูผจญภัย"><span class="portal-ring-v3"><i></i><em class="portal-spark ps1">✦</em><em class="portal-spark ps2">✧</em><em class="portal-spark ps3">✦</em></span><b>ประตูผจญภัย</b><small>เลือกด่าน 1–10</small></button>
+
+      <span class="tree deco-tree t-a">🌲</span><span class="tree deco-tree t-b">🌴</span><span class="tree deco-tree t-c">🌳</span><span class="tree deco-tree t-d">🌲</span>
+      <span class="flower-v3 f1">🌼</span><span class="flower-v3 f2">🌸</span><span class="flower-v3 f3">🌼</span><span class="flower-v3 f4">🌺</span>
+      <span class="rock-v3 r1">🪨</span><span class="rock-v3 r2">🪨</span>
+      <span class="bird-v3 b1" aria-hidden="true"><i class="bird-body"></i><i class="wing wing-left"></i><i class="wing wing-right"></i></span><span class="bird-v3 b2" aria-hidden="true"><i class="bird-body"></i><i class="wing wing-left"></i><i class="wing wing-right"></i></span>
+      <span class="npc-walker npc-b" aria-label="นักเวทประจำเมือง"><i class="npc-avatar">🧙</i><i class="npc-shadow"></i></span>
+      <span class="pet-v3 dog">🐕</span><span class="pet-v3 cat">🐈</span>
+      <div id="player" class="hub-player player-v3"><span>🧑‍🌾</span><i></i></div>
+    </div>
+    <div class="waterfall-v3 fall-left"></div><div class="waterfall-v3 fall-right"></div>
+    <div id="interactHint" class="interact-hint v3-hint">แตะอาคารเพื่อเดินไปใช้งาน</div>
+  </div>
+
+  <nav class="hub-nav city-nav v13-nav"><button id="v13HomeBtn">🏠<small>หน้าแรก</small></button><button data-place="heroes">🧙<small>ฮีโร่</small></button><button class="city-active" disabled>🛡️<small>เมือง</small></button><button data-place="quest">📜<small>เควส</small></button><button id="v13SettingsBtn">⚙️<small>ตั้งค่า</small></button></nav>
+</div>
+<div id="app" class="battle-app">
+  <header>
+    <div class="topRow"><div class="brand">🍑 <b>ORCHARD DEFENSE</b><small id="battleModeLabel">CAMPAIGN</small></div><div class="topActions"><button id="orientationBtn" aria-label="สลับแนวตั้งแนวนอน" title="สลับมุมมอง">↔️</button><button id="mapBtn" aria-label="แผนที่">🗺️</button><button id="soundBtn" aria-label="เสียง">🔊</button><button id="pauseBtn" aria-label="หยุดเกม">Ⅱ</button></div></div>
+    <div class="stageTitle" id="stageTitle">ด่าน 1 • สวนลอยฟ้า</div>
+    <div class="hud"><button id="energyText">☀️ 150</button><button id="waveText">🌊 1/12</button><button id="killText">💀 0</button><button id="speedBtn">×1</button><button id="skillBtn">⚡</button></div>
+  </header>
+  <main><div id="game"><div id="loading">กำลังเข้าสู่ด่าน…</div><div id="bossHud"><b id="bossName">🐉 BOSS</b><div id="bossTrack" class="bossTrack" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100"></div></div></div></main>
+  <section id="deck"></section><aside id="sandboxPanel" class="sandbox-panel" hidden><div class="sandbox-head"><b>🧪 SANDBOX LAB</b><small>ทดสอบฮีโร่และศัตรูได้อย่างอิสระ</small></div><div class="sandbox-controls"><button data-sandbox-spawn="goblin">👾 Goblin</button><button data-sandbox-spawn="orc">👹 Orc</button><button data-sandbox-spawn="mage">🧙 Mage</button><button data-sandbox-spawn="dragon">🐉 Boss</button><button data-sandbox-action="auto">▶ Auto Spawn</button><button data-sandbox-action="clear-enemies">🧹 ล้างศัตรู</button><button data-sandbox-action="max-heroes">⬆ Max ฮีโร่</button><button data-sandbox-action="clear-heroes">🗑 ล้างฮีโร่</button><button data-sandbox-action="reset">↻ รีเซ็ตสนาม</button><button data-sandbox-action="exit">🏠 กลับเมือง</button></div></aside><div class="help">แตะการ์ด → แตะช่องเพื่อวาง • แตะพื้นที่ว่างเพื่อยกเลิก • แตะยูนิตเดิมเพื่ออัปเกรด</div>
+</div>
+
+<div id="map" class="overlay map-overlay"><div class="panel mapPanel"><button id="closeMapTop" class="close-x map-close-x" aria-label="ปิดแผนที่">✕</button><h2>🗺️ แผนที่เกาะลอยฟ้า</h2><p id="progressText"></p><div class="stageGrid">
+<button class="stageCard" data-stage="1"><span class="stageIcon">🌿</span><b>ด่าน 1</b><small>สวนลอยฟ้า • 8 เวฟ</small><em class="stars">☆☆☆</em></button>
+<button class="stageCard" data-stage="2"><span class="stageIcon">🌲</span><b>ด่าน 2</b><small>ป่าเวทมนตร์ • 10 เวฟ</small><em class="stars">☆☆☆</em></button>
+<button class="stageCard" data-stage="3"><span class="stageIcon">🌋</span><b>ด่าน 3</b><small>ภูเขาไฟลอยฟ้า • 12 เวฟ</small><em class="stars">☆☆☆</em></button>
+<button class="stageCard" data-stage="4"><span class="stageIcon">💧</span><b>ด่าน 4</b><small>ทะเลสาบคริสตัล • 12 เวฟ</small><em class="stars">☆☆☆</em></button>
+<button class="stageCard" data-stage="5"><span class="stageIcon">🎃</span><b>ด่าน 5</b><small>ไร่ฟักทอง • 13 เวฟ</small><em class="stars">☆☆☆</em></button>
+<button class="stageCard" data-stage="6"><span class="stageIcon">🏛️</span><b>ด่าน 6</b><small>สวนโบราณ • 14 เวฟ</small><em class="stars">☆☆☆</em></button>
+<button class="stageCard" data-stage="7"><span class="stageIcon">🌫️</span><b>ด่าน 7</b><small>ป่าหมอก • 15 เวฟ</small><em class="stars">☆☆☆</em></button>
+<button class="stageCard" data-stage="8"><span class="stageIcon">🌾</span><b>ด่าน 8</b><small>ทุ่งทองคำ • 16 เวฟ</small><em class="stars">☆☆☆</em></button>
+<button class="stageCard" data-stage="9"><span class="stageIcon">🌳</span><b>ด่าน 9</b><small>ต้นไม้ศักดิ์สิทธิ์ • 17 เวฟ</small><em class="stars">☆☆☆</em></button>
+<button class="stageCard" data-stage="10"><span class="stageIcon">👑</span><b>ด่าน 10</b><small>ราชาแห่งความมืด • 18 เวฟ</small><em class="stars">☆☆☆</em></button>
+</div><button id="closeMap">กลับเมือง</button></div></div>
+
+<div id="orientationPrompt" class="orientation-prompt" aria-live="polite"><div><b id="orientationPromptTitle">หมุนโทรศัพท์</b><span id="orientationPromptText">กรุณาหมุนเครื่องเพื่อเปลี่ยนมุมมอง</span><button id="closeOrientationPrompt">ตกลง</button></div></div>
+
+
+<div id="victoryOverlay" class="victory-overlay" aria-hidden="true">
+  <div class="victory-shell">
+    <div class="victory-burst"></div>
+    <div id="victoryConfetti" class="victory-confetti" aria-hidden="true"></div>
+    <header class="victory-header">
+      <span class="victory-wing wing-left" aria-hidden="true">🪽</span>
+      <div class="victory-title-stack">
+        <div class="victory-crown">👑</div>
+        <h2 id="victoryTitle">ชนะด่านแล้ว!</h2>
+        <div id="victoryStage" class="victory-stage">สวนลอยฟ้า</div>
+      </div>
+      <span class="victory-wing wing-right" aria-hidden="true">🪽</span>
+    </header>
+    <div id="victoryStars" class="victory-stars"><span>★</span><span>★</span><span>★</span></div>
+    <div class="victory-stats">
+      <span id="victoryKills">💀 0</span>
+      <span id="victoryCore">❤️ 100%</span>
+      <span id="victoryWaves">🌊 8/8</span>
+    </div>
+    <h3 class="victory-reward-title">รางวัลที่ได้รับ</h3>
+    <div id="victoryRewards" class="victory-rewards"></div>
+    <div id="victoryUnlockNote" class="victory-unlock-note" hidden></div>
+    <div class="victory-actions">
+      <button id="victoryReplay" class="victory-btn replay">↻ เล่นอีกครั้ง</button>
+      <button id="victoryNext" class="victory-btn next">▶ ด่านถัดไป</button>
+      <button id="victoryMap" class="victory-btn map">⌂ กลับแผนที่</button>
+    </div>
+  </div>
+</div>
+
+<div id="buildingModal" class="overlay"><div class="panel feature-panel"><div id="featureHeaderBar" class="feature-header-bar" aria-live="polite"></div><button id="closeFeature" class="close-x">✕</button><div id="featureContent"></div></div></div>
+<script src="hero-data.js?v=16.7.1"></script>
+<script src="hub.js?v=16.7.1"></script>
+<script src="https://cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.min.js"></script><script src="game.js?v=16.7.1"></script></body></html>
