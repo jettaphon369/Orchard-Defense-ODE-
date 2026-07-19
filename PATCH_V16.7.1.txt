@@ -1,6 +1,0 @@
-V16.7.1 All Stages Loading Fix
-- Fix Safari/Phaser runtime failure while generating World Tree hero textures.
-- Replace risky vector drawing calls with stable primitive Graphics calls.
-- Remove duplicate texture overwrite loop.
-- Keep unified 30-hero registry and save keys unchanged.
-- Cache bump to v16.7.1.
