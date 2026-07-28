@@ -1,0 +1,15 @@
+V16.15 WORLD-CLASS COMBAT FEEDBACK PASS 1
+
+Changed: game.js, style.css, index.html, README.md
+
+New visual feedback:
+- Wave intro and final Boss Wave announcement
+- Boss cinematic entrance
+- Combo display
+- Energy pickup flight animation
+- Element-colored damage numbers and critical feedback
+- Core danger pulse
+- Premium pause overlay
+- Enhanced enemy defeat animation
+
+Save data and battle balance remain compatible with V16.14.2.
