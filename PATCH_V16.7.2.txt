@@ -1,4 +1,0 @@
-V16.7.2 Global Variable Fix
-- Fixed duplicate global const HERO_REGISTRY between hub.js and game.js.
-- This duplicate caused SyntaxError before Phaser BattleScene could start, leaving all stages stuck on loading.
-- Save keys and gameplay data unchanged.
